@@ -1,0 +1,71 @@
+/* 基本スタイル */
+body {
+    background-color: #f8f9fa; /* 背景色 */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px; /* 最大幅を調整 */
+    margin: 0 auto; /* 中央寄せ */
+    background-color: #fff; /* 白背景 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影を追加 */
+    flex: 1; /* コンテンツエリアを調整 */
+}
+
+h2 {
+    font-size: 1.5rem; /* フォントサイズ */
+    color: #333;
+    text-align: center;
+}
+
+.form-label {
+    font-size: 0.9rem; /* ラベルのフォントサイズ */
+}
+
+input.form-control {
+    font-size: 0.9rem; /* 入力欄のフォントサイズ */
+}
+
+button.btn {
+    width: 50%; /* ボタン幅を調整 */
+    max-width: 200px; /* ボタンの最大幅 */
+}
+
+/* ヘッダーのスタイル */
+.navbar {
+    justify-content: center; /* ロゴを中央寄せ */
+}
+
+/* フッターのスタイル */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd; /* フッター上部にボーダー */
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer a:hover {
+    color: #007bff; /* ホバー時のリンク色 */
+}
+
+/* ボタンを中央揃え */
+.text-center {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
