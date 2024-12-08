@@ -14,3 +14,7 @@ public class UserService {
         return userRepository.findByIdAndPassword(userId, password);
     }
 }
+
+// MVC Model View Controller
+
+// View <=> Controller <=> Service <=> Repository <=> DB

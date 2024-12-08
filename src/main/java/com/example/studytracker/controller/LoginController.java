@@ -1,6 +1,8 @@
 package com.example.studytracker.controller;
 
 import com.example.studytracker.entity.MUser;
+import com.example.studytracker.form.LoginForm;
+import com.example.studytracker.form.UserRegistrationForm;
 import com.example.studytracker.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -15,13 +17,13 @@ public class LoginController {
     private final UserService userService;
 
     @GetMapping("/signup")
-    public String signup() {
+    public String signup(@ModelAttribute UserRegistrationForm userRegistrationForm) {
         return "signup";
     }
 
     // ログイン画面へ遷移
     @GetMapping("/login")
-    public String login() {
+    public String login(@ModelAttribute LoginForm loginForm) {
         return "login";
     }
 
